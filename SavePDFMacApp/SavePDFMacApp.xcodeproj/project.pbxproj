@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F861B1772C5D42D1005C390A /* ImageGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = F861B1762C5D42D1005C390A /* ImageGradientView.m */; };
+		F861B17A2C5D4312005C390A /* GradientImageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = F861B1792C5D4312005C390A /* GradientImageCreator.m */; };
 		FCEBF36A2C5D266300472916 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEBF3692C5D266300472916 /* AppDelegate.m */; };
 		FCEBF36D2C5D266300472916 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEBF36C2C5D266300472916 /* ViewController.m */; };
 		FCEBF36F2C5D266500472916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEBF36E2C5D266500472916 /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F861B1752C5D42D1005C390A /* ImageGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageGradientView.h; sourceTree = "<group>"; };
+		F861B1762C5D42D1005C390A /* ImageGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGradientView.m; sourceTree = "<group>"; };
+		F861B1782C5D4312005C390A /* GradientImageCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientImageCreator.h; sourceTree = "<group>"; };
+		F861B1792C5D4312005C390A /* GradientImageCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientImageCreator.m; sourceTree = "<group>"; };
 		FCEBF3652C5D266300472916 /* SavePDFMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePDFMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEBF3682C5D266300472916 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCEBF3692C5D266300472916 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 				FCEBF36C2C5D266300472916 /* ViewController.m */,
 				FCEBF37B2C5D267D00472916 /* SimpleGradientView.h */,
 				FCEBF37C2C5D267D00472916 /* SimpleGradientView.m */,
+				F861B1752C5D42D1005C390A /* ImageGradientView.h */,
+				F861B1762C5D42D1005C390A /* ImageGradientView.m */,
+				F861B1782C5D4312005C390A /* GradientImageCreator.h */,
+				F861B1792C5D4312005C390A /* GradientImageCreator.m */,
 				FCEBF36E2C5D266500472916 /* Assets.xcassets */,
 				FCEBF3702C5D266500472916 /* Main.storyboard */,
 				FCEBF3732C5D266500472916 /* main.m */,
@@ -143,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEBF36D2C5D266300472916 /* ViewController.m in Sources */,
+				F861B17A2C5D4312005C390A /* GradientImageCreator.m in Sources */,
 				FCEBF3742C5D266500472916 /* main.m in Sources */,
 				FCEBF37D2C5D267D00472916 /* SimpleGradientView.m in Sources */,
+				F861B1772C5D42D1005C390A /* ImageGradientView.m in Sources */,
 				FCEBF36A2C5D266300472916 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

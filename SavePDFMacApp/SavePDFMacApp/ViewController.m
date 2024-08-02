@@ -6,11 +6,20 @@
 //
 
 #import "ViewController.h"
+
 #import "SimpleGradientView.h"
+
+#import "ImageGradientView.h"
+
+#define USEIMAGE
 
 @interface ViewController ()
 {
+#ifdef USEIMAGE
+	ImageGradientView *gradView;
+#else
 	SimpleGradientView *gradView;
+#endif
 }
 
 @end
@@ -21,8 +30,12 @@
 	[super viewDidLoad];
 	
 	self.preferredContentSize = NSMakeSize(600.0, 480.0);
-	
+
+#ifdef USEIMAGE
+	gradView = [ImageGradientView new];
+#else
 	gradView = [SimpleGradientView new];
+#endif
 	
 	// Create a button
 	NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(150, 125, 100, 50)];
@@ -34,7 +47,13 @@
 	
 	// Create a label
 	NSTextField *label = [[NSTextField alloc] initWithFrame:NSMakeRect(40, 20, 200, 45)];
+	
+#ifdef USEIMAGE
+	[label setStringValue:@"Hello, Image!"];
+#else
 	[label setStringValue:@"Hello, PDF!"];
+#endif
+	
 	[label setBezeled:NO];
 	[label setDrawsBackground:NO];
 	[label setEditable:NO];
